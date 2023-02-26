@@ -1,0 +1,115 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(112, 109, 109, 0.2);
+    backdrop-filter: saturate(180%) blur(10px);
+    display: flex;
+    width: 100%;
+    height: 14px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    z-index: 0;
+    color: whitesmoke;
+    overflow: hidden;
+
+}
+
+nav:span1 {
+    color: #7c7c7c;
+    padding: 0px 40px;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+section {
+    width: 80%;
+    margin: 80px auto;
+    display: block;
+}
+
+*,
+*::before,
+*::after {
+
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+
+    background-color: black;
+    color: white;
+    padding: auto;
+    margin: auto;
+
+}
+
+html {
+    display: block;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+
+line {
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+h2 {
+    color: white;
+    size: 30px;
+}
+
+#about {
+    background-color: aliceblue;
+}
+
+header {
+    width: calc(100vw - 10px);
+    height: 100vh;
+    background-image: url(hello-world-dark-oled-5k-ak-3840x2160.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
