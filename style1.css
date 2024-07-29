@@ -1,0 +1,38 @@
+/* styling.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 60px; /* Adjusted to account for fixed navbar */
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+}
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-pic {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.details-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.details-container img {
+    margin-right: 15px;
+}
+
+.text-container {
+    margin-top: 20px;
+}
+
