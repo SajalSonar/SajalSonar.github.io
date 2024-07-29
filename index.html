@@ -1,90 +1,293 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sajal Sonar</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="styling.css">
+    <!-- <link rel="stylesheet" href="mediaquery.css"> -->
   </head>
   <body>
-    <header>
-      <nav class="navbar fixed-top bg-dark" id="navbar-example2">
+
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top" id="navbar-example2">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">Sajal Sonar</span>
+            <a class="navbar-brand mb-0 h1">Sajal Sonar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#scrollspysection1">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#scrollspysection2">Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
+                <span class="navbar-toggler-icon">
+                    <img src="menu_24dp_FILL0_wght400_GRAD0_opsz24.svg"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left: auto;">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#about">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact details</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-    </header>
-      <section>
-        <img src="/hello-world-dark-oled-5k-ak-3840x2160.jpg" class="img-fluid" alt="cover-img">
-      </section>
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0">
-      <section>
-        <div class="container">
+    </nav>
+    
+    <section id="profile" >
+        <div class="container hero-outer">
           <div class="row">
-            <p>
-              hello world! i am Sajal
-            </p>
-          </div>
-        </div>
-
-      </section>
-
-      <se
-      <section id="scrollspysection2 py-3 my-mx-3">
-        <div class="container">
-          <div class="row">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col-md-7 col-sm-12 order-md-1 order-sm-2" id="hero-left">
+                <div class="wrapped d-flex flex-column mb-2">
+                    <div class="static-txt">Hi, I'm<br></div>
+                    <ul class="dynamic-txts ">
+                        <li><span>Sajal Sonar</span></li>
+                        <li><span>WEB Developer</span></li>
+                        <li><span>Android Developer</span></li>
+                        <li><span>Figma Desginer</span></li>
+                    </ul>
+                </div>
+            </div>  
+            <div class="col-md-5 col-sm-12 order-md-2 order-sm-1" id="hero-right" style="color: whitesmoke;">
+              <h2>Your Tagline <br> Your Description</h2>
+              <p>This is a long line of text to demonstrate how to wrap text properly within the container.</p>
+              <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('./assets/SajalSonar_Resume.pdf')">Resume</button>
+                <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info</button>
               </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="d-flex pt-2 mt-3 pb-2 justify-content-center">
+                <img src="./assets/linkedin-icon.webp" alt="My LinkedIn profile" class="social_media icon pe-2 ps-2 " onclick="location.href='https://www.linkedin.com/in/sajal-sonar-501a24246/'"/>
+                <img src="./assets/github-icon.webp" alt="My Github profile" class="social_media icon pe-2 ps-2" onclick="location.href='https://github.com/SajalSonar'"/>
               </div>
             </div>
           </div>
         </div>
+    </section>
+    
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container container">
+            <div class="col-md-3 section_pic-container order-md-1 order-sm-1">
+                <img src="./assets/Screenshot 2024-05-27 131958.png" alt="Profile picture" class="img-fluid about-pic"/>
+            </div>
+            <div class="about-details-container col-md-9 order-md-2 order-sm-2">
+                <div class="about-containers row">
+                    <div class="details-container">
+                        <img src="./assets/favorites.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>Full-stack Internship <br />@strabiztech</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/graduation.png" alt="Education icon" class="icon"/>      
+                        <h3>Education</h3>
+                        <p>B.Tech Information Technology<br>SVKM's NMIMS</p>
+                    </div>
+                </div>
+                <div class="text-container row">
+                    <p>I am Sajal Sonar, a passionate B.Tech Information Technology student set to graduate in 2025. With a keen interest in understanding how things work, I have developed proficiency in programming languages like Python, HTML, CSS, JavaScript, and Java. My experience as a Full-Stack Developer Intern has further honed my skills in tools like Android Studio, Power BI, and Figma. I am dedicated to showcasing my passion and commitment through this portfolio website to potential recruiters and HR professionals.
+                        My portfolio website features:
+                        A showcase of my best projects and case studies
+                        Detailed information about my skills and experience
+                        Relevant certifications and awards
+                        A professional yet engaging tone to connect with recruiters
+                        I hope this website will provide a comprehensive understanding of my abilities and aspirations as a future IT professional. Please feel free to explore my work and reach out for any inquiries or opportunities.</p>
+                </div>
+            </div>
+        </div>
+        <!-- <img src="" alt="Arrow Icon" class=""/> -->
+    </section>
 
-      </section>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <section id="experience">
+        <p class="section_text_p1">My Experience</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container container">
+            <div class="about-containers row">
+                <div class="details-container col-md-4">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="assets/004-html.png" alt="Experience Icon" Class="icon">
+                            <div> 
+                                <h4>HTML</h4>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/007-css.png" alt="Experience Icon" Class="icon">
+                            <div> 
+                                <h4>CSS</h4>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/008-js.png" alt="Experience Icon" Class="icon">
+                            <div> 
+                                <h4>JavaScript</h4>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/java.png" alt="Experience Icon" Class="icon">
+                            <div> 
+                                <h4>Java</h4>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container col-md-4">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="assets/002-sql.png" alt="Experience Icon" Class="icon">
+                            <div> 
+                                <h4>MYSQL</h4>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/003-php.png" alt="Experience Icon" Class="icon">
+                            <div> 
+                                <h4>PHP</h4>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/008-js.png" alt="Experience Icon" Class="icon">
+                            <div> 
+                                <h4>NoodeJS</h4>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container col-md-4">
+                    <h2 class="experience-sub-title">Android Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="assets/java.png" alt="Experience Icon" Class="icon">
+                            <div> 
+                                <h4>JAVA</h4>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/001-xml.png" alt="Experience Icon" Class="icon">
+                            <div> 
+                                <h4>XML</h4>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/mobile-development.png" alt="Experience Icon" Class="icon">
+                            <div> 
+                                <h4>Android Studio</h4>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/001-database.png" alt="Experience Icon" Class="icon">
+                            <div> 
+                                <h4>Firebase</h4>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container container">
+            <div class="about-containers row">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Tic-Tac-Toe.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Tic-Tac-Toe</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                    </div>    
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/jarvisai.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Voice-Assistance</h2>
+                    <div class="btn-container">
+                        
+                        <a href="https://github.com/'" class="btn btn-color-1 project-btn" target="_blank" rel="noopener noreferrer">
+                            Github
+                        </a>
+                    </div>    
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/fitsyncapp.jpg" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Fitsync App</h2>
+                    <div class="btn-container">
+                        <a href="https://github.com/" class="btn btn-color-1 project-btn" target="_blank" rel="noopener noreferrer">
+                            Github
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/powerbi.png" alt="Project 4" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">PowerBi Dashboard</h2>
+                    <div class="btn-container">
+                        <a href="https://github.com/" class="btn btn-color-1 project-btn" target="_blank" rel="noopener noreferrer">
+                            Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch </p>
+        <h1 class="title">Contact Me</h1>
+        <div class="d-flex flex-row  contact-info-outer-container row ">
+            <div class="d-flex flex-row pe-2 ps-2 conatact-info-container col">
+                <img src="assets/email.png" alt="Email icon" class="icon pe-2 contact-icon email-icon"/>
+                <p class="conatact_info-p"><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+            </div>
+            <div class="d-flex flex-row ps-2 pe-2 conatact-info-container col">
+                <img src="assets/linkedin-icon.webp" alt="LinkedIn icon" class="icon pe-2 align-self-center"/>
+                <p class="conatact_info-p "><a href="https://www.linkedin.com/in/sajal-sonar-501a24246/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <nav class="row">
+            <div class="nav-links-conatiner ">
+                <ul class="nav-links d-flex justify-content-center col">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact   ">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Sajal Sonar. All Rights Reserved</p>
+    </footer>
+
   </body>
 </html>
